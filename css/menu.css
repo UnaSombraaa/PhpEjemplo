@@ -1,37 +1,112 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background: linear-gradient(to bottom, #f7f1f8, #e9e5f3); /* Fondo degradado */
+    font-family: Arial, sans-serif;
+    align-self:center;
 }
 
-.header{
+.container {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(237, 229, 243, 0.9); /* Color de fondo con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    text-align: center;
+}
+
+.altaTitulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #6a5f86; /* Violeta suave */
+    align-items:center;
+    text-align: initial;
+}
+
+.altaInput {
     display: flex;
     flex-direction: column;
-    background-color: gainsboro;
-    height: 120px;
+    align-items: center;
 }
 
-.titulo{
+.grupoInputs {
+    margin: 10px 0;
+}
+
+.grupoInputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(106, 95, 134, 0.3); /* Violeta suave */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.grupoInputs input:focus {
+    border-color: #6a5f86; /* Violeta suave */
+    
+}
+
+.grupoInputs label {
+    padding: 5px 0;
+    color: #6a5f86; /* Violeta suave */
+}
+
+/* Estilo para el campo Edad */
+.grupoInputs input[type="number"] {
+    /* Utilizamos el selector de tipo para especificar el campo de tipo número */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(106, 95, 134, 0.3); /* Violeta suave */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.grupoInputs input[type="number"]:focus {
+    border-color: #6a5f86; /* Violeta suave */
+}
+
+.btn-submit {
+    width: 100%;
+    max-width: 150px;
+    margin-top: 20px;
+    background-color: #6a5f86; /* Violeta suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.btn-submit:hover {
+    background-color: #534a6f; /* Violeta suave más oscuro */
+    
+}
+
+/* Estilos para los enlaces */
+a {
+    display: block;
     text-align: center;
-    color: rgb(68, 66, 66);
-}
-
-.menu{
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu a{
     text-decoration: none;
     padding: 10px;
-    color: rgb(71, 69, 69);
-    background-color: gainsboro;
-    margin: 10px;
+    color: #6a5f86; /* Violeta suave */
+    border: 2px solid #6a5f86;
+    border-radius: 5px;
+    margin: 10px auto; /* Centrar horizontalmente */
+    width: 70%; /* Ancho */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.menu a:hover{
-    border: 1px solid rgb(56, 55, 55);
-    background-color: rgb(75, 90, 85);
+/* Estilos al pasar el cursor sobre los enlaces */
+a:hover {
+    background-color: #6a5f86; /* Violeta suave */
     color: white;
-    border-radius: 10px;
+}
+
+h3{
+    text-align: center;
 }

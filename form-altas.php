@@ -12,12 +12,13 @@ include 'menu.php';
 </head>
 <body>
 
-<div class="container">
+<div class="container" >
     <h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
 	<form class="altaInput" action="altas.php" method="POST" >
 		<div class="grupoInputs">
 		<label for="apellido">Apellido:</label>
 		<input type="text" name="apellido"><br>
+
 		</div>
 		
 		<div class="grupoInputs">
@@ -30,7 +31,7 @@ include 'menu.php';
 		<input type="text" name="edad"><br>
 	    </div>
 
-		<div class="btn-submit">
+			<div class="btn-submit">
 		<input type="submit" value="Grabar"><br>
 	    </div>
 	</form>
